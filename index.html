@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo2.png" />
+    <title>هاشم لمستحضرات التجميل والعطور</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-cream shadow-sm py-1">
+      <div class="container-fluid px-4 px-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="هاشم لمستحضرات التجميل والعطور"
+            class="logo-img" />
+        </a>
+
+        <!-- Mobile Button -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#mobileMenuModal"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-gap">
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-gray fw-medium"
+                href="index.html"
+                data-page="home"
+                >الصفحة الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-gray fw-medium"
+                href="pages/about.html"
+                data-page="about"
+                >من نحن</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-gray fw-medium"
+                href="pages/brands.html"
+                data-page="brands"
+                >الماركات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-gray fw-medium"
+                href="pages/products.html"
+                data-page="products"
+                >منتجاتنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-gray fw-medium"
+                href="pages/contact.html"
+                data-page="contact"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-3 px-2">
+            <button class="btn-primary" aria-label="تسجيل الدخول">
+              تسجيل الدخول
+            </button>
+            <button class="btn btn-primary-custom" aria-label="تحميل الآن">
+              تحميل الآن
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Modal -->
+    <div
+      class="modal fade"
+      id="mobileMenuModal"
+      tabindex="-1"
+      aria-labelledby="mobileMenuModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content mobile-menu-content">
+          <div class="modal-header mobile-menu-header">
+            <h5 class="modal-title" id="mobileMenuModalLabel">
+              <img src="images/logo.png" alt="هاشم" class="mobile-menu-logo" />
+            </h5>
+          </div>
+          <div class="modal-body mobile-menu-body">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link"
+                  href="index.html"
+                  data-page="home"
+                  data-bs-dismiss="modal"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link"
+                  href="pages/about.html"
+                  data-page="about"
+                  data-bs-dismiss="modal"
+                  >من نحن</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link"
+                  href="pages/brands.html"
+                  data-page="brands"
+                  data-bs-dismiss="modal"
+                  >الماركات</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link"
+                  href="pages/products.html"
+                  data-page="products"
+                  data-bs-dismiss="modal"
+                  >منتجاتنا</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link"
+                  href="pages/contact.html"
+                  data-page="contact"
+                  data-bs-dismiss="modal"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+
+            <div class="mobile-menu-buttons">
+              <button class="btn btn-outline-mobile" aria-label="تسجيل الدخول">
+                تسجيل الدخول
+              </button>
+              <button
+                class="btn btn-primary-mobile"
+                aria-label="تحميل التطبيق الآن">
+                تحميل الآن
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden" id="home">
+      <div class="swiper heroSwiper w-100 h-100">
+        <div class="swiper-wrapper"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="hero-navigation">
+        <button
+          class="swiper-button-prev-custom hero-nav-btn"
+          aria-label="السلايد السابق">
+          <i class="fas fa-arrow-right text-white" aria-hidden="true"></i>
+        </button>
+        <button
+          class="swiper-button-next-custom hero-nav-btn"
+          aria-label="السلايد التالي">
+          <i class="fas fa-arrow-left text-white" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Brands Marquee -->
+    <section class="py-5 bg-white overflow-hidden" id="brands">
+      <div class="brands-marquee">
+        <div class="brands-track">
+          <img src="images/brand1.png" alt="Brand 1" class="brand-logo" />
+          <img src="images/brand2.png" alt="Brand 2" class="brand-logo" />
+          <img src="images/brand3.png" alt="Brand 3" class="brand-logo" />
+          <img src="images/brand4.png" alt="Brand 4" class="brand-logo" />
+          <img src="images/brand5.png" alt="Brand 5" class="brand-logo" />
+          <img src="images/brand6.png" alt="Brand 6" class="brand-logo" />
+          <img src="images/brand7.png" alt="Brand 7" class="brand-logo" />
+          <img src="images/brand8.png" alt="Brand 8" class="brand-logo" />
+          <img src="images/brand9.png" alt="Brand 9" class="brand-logo" />
+          <img src="images/brand10.png" alt="Brand 10" class="brand-logo" />
+          <img src="images/brand11.png" alt="Brand 11" class="brand-logo" />
+          <img src="images/brand12.png" alt="Brand 12" class="brand-logo" />
+        </div>
+        <div class="brands-track" aria-hidden="true">
+          <img src="images/brand1.png" alt="" class="brand-logo" />
+          <img src="images/brand2.png" alt="" class="brand-logo" />
+          <img src="images/brand3.png" alt="" class="brand-logo" />
+          <img src="images/brand4.png" alt="" class="brand-logo" />
+          <img src="images/brand5.png" alt="" class="brand-logo" />
+          <img src="images/brand6.png" alt="" class="brand-logo" />
+          <img src="images/brand7.png" alt="" class="brand-logo" />
+          <img src="images/brand8.png" alt="" class="brand-logo" />
+          <img src="images/brand9.png" alt="" class="brand-logo" />
+          <img src="images/brand10.png" alt="" class="brand-logo" />
+          <img src="images/brand11.png" alt="" class="brand-logo" />
+          <img src="images/brand12.png" alt="" class="brand-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-1 order-lg-1">
+            <div class="about-image-wrapper mx-auto">
+              <div class="about-image-bg"></div>
+              <img
+                src="images/logo.png"
+                alt="Section Image"
+                class="about-image img-fluid" />
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-2">
+            <h2 class="about-title mb-4">
+              اولاد هاشم لمستحضرات التجميل و العطور
+            </h2>
+            <p class="about-text text-dark mb-4">
+              تأسست شركة اولاد هاشم التى تتخذ من القاهرة مقرا رئيسيا لها عام
+              1980. وفى ظل نجاحها المستحضرات التجميل والعطور المختلفة و المتميزة
+              ، فقد استطاعت الشركة أن تثبت جدارتها فى سوق مستحضرات التجميل
+              والعطور بأنواعها
+              <a href="pages/about.html" class="read-more-link">
+                اقرا المزيد...
+              </a>
+            </p>
+            <div class="features-list">
+              <div class="feature-item d-flex align-items-center mb-3">
+                <span
+                  class="feature-icon d-flex align-items-center justify-content-center">
+                  <i class="fas fa-crown text-secondary"></i>
+                </span>
+                <span class="feature-text text-secondary"
+                  >منتجات أصلية 100%</span
+                >
+              </div>
+
+              <div class="feature-item d-flex align-items-center mb-3">
+                <span
+                  class="feature-icon d-flex align-items-center justify-content-center text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="feature-svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                  </svg>
+                </span>
+                <span class="feature-text text-secondary"
+                  >أفضل الماركات العالمية</span
+                >
+              </div>
+
+              <div class="feature-item d-flex align-items-center mb-3">
+                <span
+                  class="feature-icon d-flex align-items-center justify-content-center text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="feature-svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                  </svg>
+                </span>
+                <span class="feature-text text-secondary"
+                  >اختيارات مدروسة بعناية</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-start brand-section-title mb-5">
+          Brands - وكيل لكبرى الماركات العالمية
+        </h2>
+
+        <div class="col-12 d-flex flex-wrap mb-4"  style="gap: 20px">
+          <div class="brand-card">
+            <img src="" alt="CLEAR" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="Kamena" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="Pretty Woman" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="Sensodyne" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="BYPHASSE" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="wet n wild" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="MAYBELLINE" class="brand-card-img" />
+          </div>
+          <div class="brand-card">
+            <img src="" alt="L'ORÉAL" class="brand-card-img" />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="pages/brands.html" class="btn-brands-more mt-2"
+            >عرض المزيد</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------ products --------------------------------------- -->
+    <section class="container" id="products">
+      <div class="d-flex pt-4 productsHeader">
+        <div class="l d-none d-md-block"></div>
+        <p class="pTitle">منتجاتنا</p>
+      </div>
+      <div
+        class="d-flex w-100 justify-content-between categoriesCards flex-wrap">
+        <div class="makeupCard d-flex justify-content-center align-items-end">
+          <p>قسم المكياج</p>
+        </div>
+        <div class="creamCard d-flex justify-content-center align-items-end">
+          <p>قسم الكريمات</p>
+        </div>
+        <div
+          class="mostlzmatCard d-none d-lg-flex justify-content-center align-items-end">
+          <p>قسم المستلزمات</p>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <a href="./pages/products.html"
+          ><button class="btnProducts">عرض المزيد</button></a
+        >
+      </div>
+    </section>
+    <!-- ------------------------------------------------- contact ----------------------------------------------- -->
+    <section class="container pt-5 pb-5" id="contactUs">
+      <div class="maps col-12 d-flex justify-content-between flex-wrap">
+        <div class="map1 d-flex flex-column gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            فرع 1 : عماره 430 مول بانوراما الموسكي شارع بور سعيد الموسكي الدور
+            الثاني
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6505309266346!2d31.2604603!3d30.0495346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458402a0e5e58b7%3A0xea3bdb05b4864474!2s430%20Port%20Said%2C%20El-Darb%20El-Ahmar%2C%20El%20Mosky%2C%20Cairo%20Governorate%204284144%2C%20Egypt!5e0!3m2!1sen!2seg!4v1740747050193!5m2!1sen!2seg"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="خريطة موقع متجرنا - 430 بورسعيد، الموسكي، القاهرة">
+          </iframe>
+        </div>
+        <div class="map1 d-flex flex-column gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="pMap2">فرع 2 : 416 شارع بور سعيد الدور الاول</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6505309266346!2d31.2604603!3d30.0495346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fdfbfdf0ac5%3A0x35a5a3c7b1c7e6b0!2s416%20Port%20Said%2C%20Ghayt%20Al%20Adah%2C%20El%20Mosky%2C%20Cairo%20Governorate%204284121%2C%20Egypt!5e0!3m2!1sen!2seg!4v1740745320578!5m2!1sen!2seg"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="خريطة موقع متجرنا - 430 بورسعيد، الموسكي، القاهرة">
+          </iframe>
+        </div>
+      </div>
+      <div class="bottom-contact d-flex justify-content-between mt-4 flex-wrap">
+        <div class="contact">
+          <div class="form">
+            <div class="d-flex pt-4 productsHeader">
+              <div class="i d-none d-md-block"></div>
+              <p class="pTitle fs-4">احصل على عرض اسعار</p>
+            </div>
+            <form>
+              <input
+                type="text"
+                class="w-100 form-control mb-4"
+                placeholder="ادخل اسمك" />
+              <input
+                type="text"
+                class="w-100 form-control mb-4"
+                placeholder="ادخل رقم الهاتف" />
+              <input
+                type="text"
+                class="w-100 form-control mb-4"
+                placeholder="ادخل البريد الالكتروني" />
+              <textarea
+                class="w-100 form-control mb-4"
+                placeholder="ادخل رساله"
+                style="resize: none; height: 166px">
+              </textarea>
+              <button
+                class="w-100 btn py-2 text-white"
+                style="background-color: #c9a23a">
+                ارسال
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contactInfo d-flex flex-column align-items-center">
+          <i class="fa-solid fa-phone"></i>
+          <p class="p1">للطلبيات و المبيعات اتصلوا بنا على</p>
+          <p class="p2">0225935030</p>
+          <p class="p3">0225935040</p>
+          <p class="p4">01147200697</p>
+          <div class="d-flex" style="color: #eadda6; gap: 32px">
+            <i class="fa-brands fa-telegram fs-1"></i>
+            <i class="fa-brands fa-facebook-f fs-1"></i>
+            <i class="fa-brands fa-whatsapp fs-1"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------- footer ---------------------------------------------- -->
+    <footer>
+      <div class="footer d-flex flex-wrap-reverse flex-md-wrap container w-100">
+        <div
+          class="footerLogo w-sm-100 w-md-25 w-lg-25 justify-content-center align-items-center">
+          <img
+            style="width: 185px; padding-top: 90px; padding-bottom: 108.5px"
+            src="./images/logo2.png"
+            alt="Logo" />
+        </div>
+        <div
+          class="d-none d-md-block"
+          style="
+            height: 185px;
+            width: 2px;
+            background-color: #ffffff33;
+            margin-top: 84px;
+          "></div>
+        <div
+          class="footerNav w-sm-100 w-md-25 w-lg-25"
+          style="margin-right: 40px; margin-top: 70px">
+          <p
+            style="
+              color: #eadda6;
+              font-family: Cairo;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 20px;
+              margin-bottom: 16px;
+              padding-left: 108px;
+            ">
+            الشركة
+          </p>
+          <div class="d-flex flex-column w-100">
+            <a
+              href="index.html"
+              style="
+                text-decoration: none;
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+                margin-bottom: 8px;
+              ">
+              <i class="fa-solid fa-angle-right iconColor"></i>
+              الصفحة الرئيسية
+            </a>
+            <a
+              href="./pages/about.html"
+              style="
+                text-decoration: none;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+                margin-bottom: 8px;
+              ">
+              <i class="fa-solid fa-angle-right iconColor"></i>
+              من نحن
+            </a>
+            <a
+              href="./pages/brands.html"
+              style="
+                text-decoration: none;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+                margin-bottom: 8px;
+              ">
+              <i class="fa-solid fa-angle-right iconColor"></i>
+              الماركات
+            </a>
+            <a
+              href="./pages/products.html"
+              style="
+                text-decoration: none;
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+                margin-bottom: 8px;
+              ">
+              <i class="fa-solid fa-angle-right iconColor"></i>
+              منتجاتنا
+            </a>
+            <a
+              href="./pages/contact.html"
+              style="
+                text-decoration: none;
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+                margin-bottom: 8px;
+              ">
+              <i class="fa-solid fa-angle-right iconColor"></i>
+              اتصل بنا
+            </a>
+          </div>
+        </div>
+        <div
+          class="d-none d-md-block"
+          style="
+            height: 185px;
+            width: 2px;
+            background-color: #ffffff33;
+            margin-top: 84px;
+          "></div>
+        <div
+          class="footerBrands w-sm-100 w-md-25 w-lg-25"
+          style="margin-right: 40px; margin-top: 70px; padding-left: 108px">
+          <p
+            style="
+              font-family: Cairo;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 20px;
+              color: #eadda6;
+            ">
+            الماركات
+          </p>
+          <div class="d-flex flex-column" style="gap: 20px">
+            <img src="./images/Essence logo.svg" alt="" />
+            <img src="./images/loreal-logo logo.svg" alt="" />
+            <img src="./images/Clear-logo logo.svg" alt="" />
+            <img src="./images/Dove logo.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="d-none d-md-block"
+          style="
+            height: 185px;
+            width: 2px;
+            background-color: #ffffff33;
+            margin-top: 84px;
+          "></div>
+        <div
+          class="footterContact w-sm-100 w-md-25 w-lg-25"
+          style="margin-top: 70px; margin-right: 40px">
+          <p
+            style="
+              font-family: Cairo;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 20px;
+              color: #eadda6;
+            ">
+            تواصل معنا
+          </p>
+          <div class="fcontent d-flex flex-column">
+            <p
+              style="
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+              ">
+              <i class="fa-solid fa-location-dot iconColor"></i>
+              فرع 1 : عماره 430 مول بانوراما الموسكي شارع بور سعيد الموسكي الدور
+              الثاني
+            </p>
+            <p
+              style="
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+              ">
+              <i class="fa-solid fa-location-dot iconColor"></i>
+              فرع 2 : 416 شارع بور سعيد الدور الاول
+            </p>
+            <p
+              style="
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+              ">
+              <i class="fa-solid fa-phone iconColor"></i>
+              01147200697 - 0225935040 - 0225935030
+            </p>
+            <p
+              style="
+                font-family: Cairo;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #f7f6f2;
+              ">
+              <i class="fa-regular fa-envelope iconColor"></i>
+              info@awladhashem.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="w-100 h-100 p-1"
+        style="background-color: #141414; color: #f7f6f2b2">
+        <p
+          style="
+            font-family: Cairo;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+          "
+          class="container">
+          جميع الحقوق محفوظة اولاد هاشم لمستحضرات التجميل و العطور 2026
+        </p>
+      </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
