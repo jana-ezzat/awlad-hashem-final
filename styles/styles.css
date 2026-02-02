@@ -525,6 +525,7 @@ body {
 .brand-card {
   flex: 0 0 calc(25% - 15px);
   max-width: calc(25% - 15px);
+  min-width: 0;
   height: 169px;
   background-color: white;
   border: 1px solid var(--primary-light);
@@ -570,6 +571,20 @@ body {
   padding-right: 1rem;
 }
 
+.brands-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
 /* Responsive Design */
 @media (max-width: 1300px) {
 }
@@ -598,11 +613,6 @@ body {
   .hero-section {
     height: 70vh;
     min-height: 500px;
-  }
-
-  .brands-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
   }
 
   .hero-navigation {
@@ -732,8 +742,23 @@ body {
   }
 
   .brand-card {
-    flex: 0 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .brand-card {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    min-width: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .col-12.d-flex .brand-card {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
   }
 }
 
@@ -791,10 +816,6 @@ body {
     gap: 1.5rem;
   }
 
-  .brands-grid {
-    gap: 0.75rem;
-  }
-
   .btn-brands-more {
     padding: 8px 32px;
     font-size: 14px;
@@ -814,6 +835,11 @@ body {
 
   .feature-text {
     font-size: 0.9rem;
+  }
+
+  .brand-card {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
   }
 }
 
@@ -869,6 +895,11 @@ body {
   .feature-text {
     font-size: 0.85rem;
   }
+
+  .brand-card {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+  }
 }
 
 @media (max-width: 360px) {
@@ -894,20 +925,15 @@ body {
     height: 50vh;
     min-height: 360px;
   }
+
+  .brand-card {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+  }
 }
 
-/* End of styles.css */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Cairo", sans-serif;
-  background-color: white;
-  direction: rtl;
-}
+
 .l {
   background-color: #eadda6;
   height: 55px;
